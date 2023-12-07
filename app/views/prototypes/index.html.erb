@@ -6,11 +6,10 @@
         <%= "こんにちは、" %>
         <%= link_to current_user.name, "/users/#{current_user.id}", class: :greeting__link%>
       </div> 
-    <%# // ログインしているときは上記を表示する %>
+    <% end %> <%# // ログインしているときは上記を表示する %>
     <div class="card__wrapper">
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
       <%= render partial: "prototype", collection: @prototypes %>
     </div>
-    <% end %>
   </div>
 </main>
